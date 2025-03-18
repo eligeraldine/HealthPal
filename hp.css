@@ -1,0 +1,232 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(244, 244, 244, 0.9);
+    padding: 0px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: transitionIn 1s;
+}
+
+.logo img {
+    margin-top: 10px;
+    width: 50%;
+    height: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color:#003366;
+}
+
+nav a:hover {
+ 
+    color: #7bb1e7d4;
+    text-decoration: underline;
+}
+
+nav {
+    padding-right: 230px;
+
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#nav-links {
+    display: flex;
+    gap: 50px; 
+    margin-right: 150px; 
+}
+
+
+
+
+.cta-button:hover {
+    background-color: #c90a0a;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.nav {
+    background-color: #003366;
+    color: white;
+    padding: 5px 0;
+}
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.nav ul li {
+    display: inline;
+    font-size: small;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    
+}
+.nav ul li a{
+    color: white;
+}
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+.search-input {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: rgb(225, 225, 225);
+    text-align: center;
+}
+.search-button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.alphabet-search {
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.alphabet-search h3 {
+    text-align: left;
+    margin-left: 2px;
+    margin-bottom: 10px;
+}
+.alphabet-search div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+.alphabet-search button {
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px;
+}
+.disease {
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-top: 60px;
+
+}
+
+
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 80px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    border: none;
+    color: #0099ff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #0099ff;
+    color: white;
+}
+
+.disease-list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 170px;
+    margin-top: 50px;
+}
+
+.disease-column {
+    flex: 1;
+    padding: 0 10px;
+}
+.button :hover{
+    background-color: rgb(181, 181, 181);
+}
+.disease-column p {
+    margin: 30px 0;
+}
+.vertical-line {
+    width: 1px;
+    background-color: #ccc;
+    margin-left: 20px;
+    margin-right: 70px;
+}

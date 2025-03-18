@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="appointment.css">
+    <title>Appointment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="logo">
+           <a href="index.html"><img src="logo.png" alt="HealthPedia Logo"></a>
+       </div>
+       
+       <nav id="nav-links">
+           <a href="index.html#newslink">News</a>
+           <a href="hp.html">Healthpedia</a>
+           <div class="dropdown">
+               <a href="index.html#services" class="dropbtn">Services</a>
+               <div class="dropdown-content">
+                   <a href="index.html#onlineconsul">Online Consultation</a>
+                   <a href="index.html#testimonialink">Testimonials</a>
+               </div>
+           </div>
+           <a href="index.html#aboutuslink">About</a>
+       </nav>
+       <a href="log.html#services" class="btn cta-button">Login</a>
+   </header>
+    <!-------BATAS HEADER--------------->
+
+    <div class="background">
+        <div class="booking-form">
+            <form action="">
+            <h2 class="header-form">Appointment Booking <span>Form</span></h2>
+
+                <div class="form-field">
+                    <p>HealthPal ID</p>
+                    <input type="text" placeholder="Your HealthPal ID" required>
+                </div>
+
+                <div class="form-field">
+                    <p>Patient's name</p>
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-field">
+                    <p>Patient's Email</p>
+                    <input type="text" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-field">
+                    <p>Date of Birth</p>
+                    <input type="date" required>
+                </div>
+
+                <div class="form-field">
+                    <p>Specialty</p>
+                    <select name="select" id="#" required>
+                        <option value="" disabled selected>Select Here</option>
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Cardiothoraric Surgery">Cardiothoraric Surgery</option>
+                        <option value="Clinical Haemotolgy">Clinical Haemotolgy</option>
+                        <option value="Clinical Oncology">Clinical Oncology</option>
+                        <option value="Dermatology">Dermatology</option>
+                        <option value="Family Medicine">Family Medicine</option>
+                        <option value="Internal Medicine">Internal Medicine</option>
+                        <option value="Medical Microbiologist">Medical Microbiologist</option>
+                        <option value="Neonatology">Neonatology</option>
+                        <option value="Nephrology">Nephro</option>logy</option>
+                        <option value="Orthodontist">Orthodontist</option>
+                        <option value="Paediatric Cardiology">Paediatric Cardiology</option>
+                        <option value="Rheumatology">Rheumatology</option>
+                        <option value="Urology">Urology</option>
+                        <option value="Others">Others...</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <p>Date</p>
+                    <input type="date" required>
+                </div>
+
+                <div class="form-field">
+                    <p>Places</p>
+                    <select name="select" required>
+                        <option value="" disabled selected>Select Here</option>
+                        <option value="Adi Husada Kapasari">RS Adi Husada Kapasari</option>
+                        <option value="Adi Husada Undaan">RS Adi Husada Undaan</option>
+                        <option value="Ciputra Hospital">Ciputra Hospital</option>
+                        <option value="Mayapada Hospital">Mayapada Hospital</option>
+                        <option value="National Hospital">National Hospital</option>
+                        <option value="Siloam Surabaya">RS Siloam Surabaya</option>
+                        <option value="Others...">Others...</option>
+                    </select>
+                </div>
+                
+                <button class="btn-appointment">Book Now</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(244, 244, 244, 0.9);
+    padding: 0px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: transitionIn 1s;
+}
+
+.logo img {
+    margin-top: 10px;
+    width: 50%;
+    height: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color:#003366;
+}
+
+nav a:hover {
+ 
+    color: #7bb1e7d4;
+    text-decoration: underline;
+}
+
+nav {
+    padding-right: 230px;
+
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    right: 17px;
+}
+
+#nav-links {
+    display: flex;
+    gap: 50px; 
+    margin-right: 150px; 
+}
+
+.cta-button:hover {
+    background-color: #c90a0a;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Body */
+
+*{
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.wrapper h1{
+    font-size: 2.5em;
+    margin: 50px;
+    color: #003366;
+}
+
+.category-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1200px;
+
+}   
+
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 220px;
+    width: 350px;
+    padding: 40px;
+    border-radius: 5px;
+    margin: 40px 10px;
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category img {
+    width: 100%; /* Makes the image fit the width of the category box */
+    height: auto; /* Maintains the aspect ratio of the image */
+    border-radius: 30px;
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+   
+}
+
+.category h2{
+    font-size: 22px;
+    color: #003366;
+}
+
+.category p{
+    font-size: 17px;
+    color: #003366;
+}
+.category a{
+    text-decoration: none;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.3);
+
+}
+
+.category:hover img{
+    opacity: 0;
+}
+
+
+.category:nth-child(1):hover {
+    background: linear-gradient(45deg, 
+                                rgba(176, 210, 217, 0.8) 0%, 
+                                rgba(78, 220, 220, 0.677) 100%),
+                url('nutrition.jpg');
+    background-size: cover;
+}
+
+.category:nth-child(2):hover {
+    background: linear-gradient(45deg, 
+                                rgba(176, 210, 217, 0.8) 0%, 
+                                rgba(78, 220, 220, 0.677) 100%),
+                url('mentalpeace.jpg');
+    background-size: cover;
+}
+
+.category:nth-child(3):hover {
+    background: linear-gradient(45deg, 
+                                rgba(176, 210, 217, 0.8) 0%, 
+                                rgba(78, 220, 220, 0.677) 100%),
+                url('sleep.jpeg');
+    background-size: cover;
+}
+
+.category:nth-child(4):hover {
+    background: linear-gradient(45deg, 
+                                rgba(176, 210, 217, 0.8) 0%, 
+                                rgba(78, 220, 220, 0.677) 100%),
+                url('parenthood.jpeg');
+    background-size: cover;
+}
+
+.category:nth-child(5):hover {
+    background: linear-gradient(45deg, 
+                                rgba(176, 210, 217, 0.8) 0%, 
+                                rgba(78, 220, 220, 0.677) 100%),
+                url('fitness.jpg');
+    background-size: cover;
+}
+
+.category:nth-child(6):hover {
+    background: linear-gradient(45deg, 
+                                rgba(176, 210, 217, 0.8) 0%, 
+                                rgba(78, 220, 220, 0.677) 100%),
+                url('hearing.jpg');
+    background-size: cover;
+}
+
+.category:nth-child(7):hover {
+    background: linear-gradient(45deg, 
+                                rgba(176, 210, 217, 0.8) 0%, 
+                                rgba(78, 220, 220, 0.677) 100%),
+                url('sexualhealth.jpg');
+    background-size: cover;
+}
+
+.category:nth-child(8):hover {
+    background: linear-gradient(45deg, 
+                                rgba(176, 210, 217, 0.8) 0%, 
+                                rgba(78, 220, 220, 0.677) 100%),
+                url('skincare.jpg') ;
+    background-size: cover;
+}
+
+.category:nth-child(9):hover {
+    background: linear-gradient(45deg, 
+                                rgba(176, 210, 217, 0.8) 0%, 
+                                rgba(78, 220, 220, 0.677) 100%),
+                url('vitamin.jpeg');
+    background-size: cover;
+}
+
+
+    

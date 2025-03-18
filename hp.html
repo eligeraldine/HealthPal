@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hp.css">
+    <title>HealthPedia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="logo">
+           <a href="index.html"><img src="logo.png" alt=""></a>
+        </div>
+       
+        <nav id="nav-links">
+            <a href="index.html#newslink">News</a>
+            <a href="hp.html">Healthpedia</a>
+            <div class="dropdown">
+                <a href="services.html" class="dropbtn">Services</a>
+                <div class="dropdown-content">
+                    <a href="index.html#onlineconsul">Online Consultation</a>
+                    <a href="index.html#testimonialink">Testimonials</a>
+                </div>
+            </div>
+            <a href="index.html#aboutuslink">About</a>
+        </nav>
+        <a href="log.html#services" style="position:relative; border-radius: 10px; padding-top: 5px; padding-bottom: 5px;" type="button" class="btn cta-button">Login</a>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#virus">Virus</a></li>
+            <li><a href="#Kanker">Cancer</a></li>
+            <li><a href="#Jantung">Heart</a></li>
+            <li><a href="#Otak">Brain</a></li>
+            <li><a href="#Psikologi">Psychology</a></li>
+            <li><a href="#Defisiensi">Deficiency</a></li>
+            <li><a href="#Infeksi">Infection</a></li>
+            <li><a href="#Mata">Eyes</a></li>
+            <li><a href="#Pencernaan">Digestion</a></li>
+            <li><a href="#Semua Penyakit">All Diseases</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Pencarian Penyakit">
+        <button class="search-button">Find</button>
+    </div>
+
+    <div class="alphabet-search">
+        <h3>Find Based On Alphabet</h3>
+        <div class="button">
+            <button onclick="filterDiseases('A')">A</button>
+            <button onclick="filterDiseases('B')">B</button>
+            <button onclick="filterDiseases('C')">C</button>
+            <button onclick="filterDiseases('D')">D</button>
+            <button onclick="filterDiseases('E')">E</button>
+            <button onclick="filterDiseases('F')">F</button>
+            <button onclick="filterDiseases('G')">G</button>
+            <button onclick="filterDiseases('H')">H</button>
+            <button onclick="filterDiseases('I')">I</button>
+            <button onclick="filterDiseases('J')">J</button>
+            <button onclick="filterDiseases('K')">K</button>
+            <button onclick="filterDiseases('L')">L</button>
+            <button onclick="filterDiseases('M')">M</button>
+            <button onclick="filterDiseases('N')">N</button>
+            <button onclick="filterDiseases('O')">O</button>
+            <button onclick="filterDiseases('P')">P</button>
+            <button onclick="filterDiseases('Q')">Q</button>
+            <button onclick="filterDiseases('R')">R</button>
+            <button onclick="filterDiseases('S')">S</button>
+            <button onclick="filterDiseases('T')">T</button>
+            <button onclick="filterDiseases('U')">U</button>
+            <button onclick="filterDiseases('W')">W</button>
+            <button onclick="filterDiseases('X')">X</button>
+            <button onclick="filterDiseases('Y')">Y</button>
+            <button onclick="filterDiseases('Z')">Z</button>
+        </div>
+    </div>
+
+    <h3 style="text-align: center;">Diseases List</h3>
+    <div id="disease-list" class="disease-list">
+        <!-- Disease list will be dynamically populated here -->
+    </div>
+
+    <div class="pagination">
+        <button onclick="prevPage()">&#60;&#60;</button>
+        <button onclick="changePage(1)">1</button>
+        <button onclick="changePage(2)">2</button>
+        <button onclick="changePage(3)">3</button>
+        <button onclick="changePage(4)">4</button>
+        <button onclick="changePage(5)">5</button>
+        <button onclick="nextPage()">&#62;&#62;</button>
+    </div>
+    
+
+    <script src="hp.js"></script>
+</body>
+</html>
